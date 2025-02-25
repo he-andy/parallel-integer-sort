@@ -48,6 +48,8 @@ def main():
         print("stderr:", err)
         sys.exit(process.returncode)
 
+    print("stderr:", err)
+
     output_str = out.strip()
     if not output_str:
         output_ints = []
