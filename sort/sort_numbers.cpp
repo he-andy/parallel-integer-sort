@@ -61,6 +61,7 @@ void vectorizedRadixSort32_serial(int *data, size_t n)
 int main()
 {
   std::vector<int> data;
+  data.reserve(1000000);
   int x;
 
   constexpr u_int32_t sign_bit = 0x80000000;
